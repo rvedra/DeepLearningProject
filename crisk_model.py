@@ -41,7 +41,6 @@ st.title("Avaliação de Empresa - Risco")
 selected_sector = st.selectbox('Selecione o setor.', sector_list)
 adj_sector = le.transform([selected_sector])
 
-# Suponha que grouped_df seja o seu DataFrame com os dados agrupados
 
 # Dividindo o DataFrame em diferentes grupos
 liquidity_df = pd.DataFrame(grouped_df.loc[selected_sector,['currentRatio', 'quickRatio', 'cashRatio']]).T
